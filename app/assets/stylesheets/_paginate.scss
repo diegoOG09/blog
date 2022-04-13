@@ -1,0 +1,14 @@
+@import 'variables';
+
+.pagination {
+  font-family: $other;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $main;
+  
+  .previous_page {
+    background-color: $blue;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,42 @@
+@import 'variables';
+
+#footer {
+  font-family: $titles;
+  .footer1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $gruv-cards;
+    padding: 3rem 0 3rem 0;
+    .footer1_group1 {
+      color: $main;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .footer1_group2 {
+      a {
+        color: $main;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 1rem;
+      }
+    }
+  }
+  .footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $gruv-blackv3;
+    padding: 3rem 0 3rem 0;
+    a {
+      text-decoration: none;
+      color: $gruv-cards;
+      margin-right: 2rem;
+      i{
+        margin-right: .6rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

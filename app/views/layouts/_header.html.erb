@@ -1,0 +1,18 @@
+<header class="header container">
+  <h1>Blog</h1>
+
+  <nav id="navbar">
+
+    <ul class="link-list">
+      <li><a href="<%= root_path %>">Inicio</a></li>
+      <li><a href="#">Articulos</a></li>
+      <li><a href="#">Sobre nosotros</a></li>
+      <li><a href="#">Tags</a></li>
+      <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+    </ul>
+    
+  </nav>
+
+  <%= render :partial => "layouts/tags" if current_page?(root_path) %>
+  
+</header>

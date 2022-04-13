@@ -1,0 +1,17 @@
+<div id="article" class="container">
+  <div id="cover">
+    <% if @article.cover.attached? %>
+      <%= image_tag(url_for(@article.cover), :class => "cover_img", :loading => "lazy") %>
+    <% end %>
+  </div>
+  <div id="article-content">
+    <div class="shared">
+      <span class="shared_count"><i class="fa-brands fa-twitter-square"></i>10</span>
+      <a class="demo_button" href='#'>ver demo<i class="fa-solid fa-right-long"></i></a>
+    </div>
+  
+    <h2 id="title"> <%= @article.title  %> </h2>
+    <div> <%= @article.content %> </div>
+  </div>
+</div>
+<%= javascript_include_tag "pagination" %>

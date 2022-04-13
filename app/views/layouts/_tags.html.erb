@@ -1,0 +1,10 @@
+<div id="tagsModal" class="tagsModal">
+  <% Tag.all.each do |tag| %>
+
+  <p class="tag">
+    <span class="icon"></span>
+    <%= tag.name %>
+  </p>
+
+  <% end %>
+</div>

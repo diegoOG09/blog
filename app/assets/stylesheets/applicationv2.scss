@@ -1,0 +1,20 @@
+@import "variables";
+@import "normalize";
+
+html {
+  background-color: $mainv2;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+#tagsModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: $gruv-black;
+  font-family: $other;
+}

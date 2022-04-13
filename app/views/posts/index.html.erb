@@ -1,0 +1,38 @@
+<div id="posts">
+  <main style="margin-bottom: 4rem;">
+    <div class="articles-grid container">
+      <div class="presentation-text">
+        <h2>What's new?</h2>
+        <h3>Written and published by <br> Diego Salinas [mantequillah]</h3>
+      </div>
+
+      <%= will_paginate @posts %>
+        <% @posts.each do |post| %>
+          <div class="article-card">
+
+            <div class="date">
+              <%= post.created_at.strftime("%d - %B - %Y") %>
+            </div>
+
+            <div class="cover">
+              <%= image_tag "wave.svg", :class => "wave" %>
+            </div>
+            
+            <div class="article-info">
+              <h2><%= post.title %></h2>
+              <h3><%= post.description %></h3>
+              <%
+=begin%>
+ <p> <%= link_to "Read more admin...", post %> </p> 
+<%
+=end%>
+              <p> <%= link_to "Read more...", article_path(article_id: post.id) %> </p>
+            </div>
+            
+          </div>
+        <% end %>
+      <%= will_paginate %>
+    </div>
+  </main>
+
+</div>
