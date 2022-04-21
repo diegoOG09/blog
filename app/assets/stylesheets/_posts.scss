@@ -1,14 +1,63 @@
-@import 'variables';
+@import "variables";
 
 #posts {
+  .about_me {
+    margin-bottom: 3rem;
+    font-family: $other;
+    #aboutme {
+      color: $blue;
+      font-weight: 300;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .p_aboutme {
+      font-size: 1.2rem;
+      word-spacing: 3px;
+      line-height: 1.5rem;
+      margin: 0.5rem 0;
+      color: $gray;
+      a {
+        color: $main;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+    .grid_things {
+      color: $gray;
+      display: grid;
+      grid-template-columns: 50% 55% 50%;
+      margin: 2rem 0 0 0;
+      .things {
+        padding: .7rem;
+        width: 18rem;
+        h2 {
+          font-size: 1.2rem;
+          color: $main;
+          text-align: left;
+          i {
+            font-size: 1rem;
+            margin-right: 1rem;
+          }
+        }
+        ul {
+          line-height: 1.5rem;
+          li {
+            font-size: 1rem;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+
   margin-top: 4rem;
   color: $gruv-black;
   .articles-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     .presentation-text {
-      margin-left: 1rem;
       margin-top: 3rem;
       font-family: $other;
 

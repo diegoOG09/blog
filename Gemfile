@@ -13,6 +13,8 @@ gem "sprockets-rails"
 #gem "sqlite3", "~> 1.4"
 gem 'pg'
 
+gem 'acts_as_commentable_with_threading'
+
 gem 'will_paginate'
 
 # Use the Puma web server [https://github.com/puma/puma]

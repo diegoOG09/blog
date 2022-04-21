@@ -66,8 +66,14 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    acts_as_commentable_with_threading (2.0.1)
+      activerecord (>= 4.0)
+      activesupport (>= 4.0)
+      awesome_nested_set (>= 3.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    awesome_nested_set (3.5.0)
+      activerecord (>= 4.0.0, < 7.1)
     bindex (0.8.1)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
@@ -233,6 +239,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  acts_as_commentable_with_threading
   bootsnap
   capybara
   debug

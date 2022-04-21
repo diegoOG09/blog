@@ -1,20 +1,26 @@
 @import "variables";
 
 .header {
-  text-align: center;
+  text-align: left;
   font-family: $titles;
   color: $main;
   font-size: 1.5rem;
   
-  h1 {
+  .title_title {
+    color: $blue;
     margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+  .subtitle {
+    color: rgb(197, 196, 196);
+    font-size: 1rem;
     margin-bottom: 3rem;
   }
 
   #navbar ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 1.5rem;
     padding-inline-start: 0;

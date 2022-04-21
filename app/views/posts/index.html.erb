@@ -1,37 +1,74 @@
 <div id="posts">
   <main style="margin-bottom: 4rem;">
+    <div class="about_me container">
+      <h1 id="aboutme">About me</h1>
+      <p class="p_aboutme">
+        My name is Diego Salinas and I'm a Jr. Web developer. I'm from Mexico and I'm currently finding a job. You can find me on [
+        <a href="https://twitter.com/mantequillah_" target="_blank"><i class="fa-brands fa-twitter"></i></a>,
+        <a href="https://www.linkedin.com/in/diego-salinas09/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>,
+        <a href="https://github.com/diegoOG09" target="_blank"><i class="fa-brands fa-github-alt"></i></a>].
+      </p>
+      <p class="p_aboutme">
+        On this page you can find some information about me and a few blog posts I wrote. Most of them are about topics that I'm most interested in, such as web development, Ruby on Rails or Javascript. I also have a couple of open source side-projects which are listed down below.
+      </p>
+      <div class="grid_things container">
+        <div class="things">
+          <h2><i class="fas fa-keyboard"></i>I handle...</h2>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>Javascript</li>
+            <li>HTML/CSS</li>
+            <li>GNU/Linux</li>
+            <li>Terminal</li>
+            <li>Vue soon</li>
+          </ul>
+        </div>
+        <div class="things">
+          <h2><i class="fas fa-fire"></i>Passionate about...</h2>
+          <ul>
+            <li>Coding</li>
+            <li>Cinema</li>
+            <li>Videogames</li>
+            <li>Books</li>
+            <li>Music</li>
+        </div>
+        <div class="things">
+          <h2><i class="fas fa-lightbulb"></i>Thinking about...</h2>
+          <ul>
+            <li>Vue</li>
+            <li>Unit test</li>
+            <li>Full-stack</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
     <div class="articles-grid container">
       <div class="presentation-text">
         <h2>What's new?</h2>
         <h3>Written and published by <br> Diego Salinas [mantequillah]</h3>
       </div>
 
-      <%= will_paginate @posts %>
-        <% @posts.each do |post| %>
-          <div class="article-card">
+      <% @posts.each do |post| %>
+        <div class="article-card">
 
-            <div class="date">
-              <%= post.created_at.strftime("%d - %B - %Y") %>
-            </div>
-
-            <div class="cover">
-              <%= image_tag "wave.svg", :class => "wave" %>
-            </div>
-            
-            <div class="article-info">
-              <h2><%= post.title %></h2>
-              <h3><%= post.description %></h3>
+          <div class="date">
+            <%= post.created_at.strftime("%d - %B - %Y") %>
+          </div>
+          
+          <div class="article-info">
+            <h2><%= post.title %></h2>
+            <h3><%= post.description %></h3>
               <%
 =begin%>
  <p> <%= link_to "Read more admin...", post %> </p> 
 <%
 =end%>
-              <p> <%= link_to "Read more...", article_path(article_id: post.id) %> </p>
-            </div>
-            
+            <p> <%= link_to "Read more...", article_path(article_id: post.id) %> </p>
           </div>
-        <% end %>
-      <%= will_paginate %>
+        </div>
+      <% end %>
+      <%= will_paginate @posts %>
     </div>
   </main>
 
