@@ -1,7 +1,7 @@
 <div id="posts">
   <main style="margin-bottom: 4rem;">
-    <div class="about_me container">
-      <h1 id="aboutme">About me</h1>
+    <div class="section_title container">
+      <h1 class="aboutme">About me</h1>
       <p class="p_aboutme">
         My name is Diego Salinas and I'm a Jr. Web developer. I'm from Mexico and I'm currently finding a job. You can find me on [
         <a href="https://twitter.com/mantequillah_" target="_blank"><i class="fa-brands fa-twitter"></i></a>,
@@ -43,12 +43,11 @@
       </div>
     </div>
     
-    <div class="articles-grid container">
-      <div class="presentation-text">
-        <h2>What's new?</h2>
-        <h3>Written and published by <br> Diego Salinas [mantequillah]</h3>
-      </div>
+    <div class="container section_title">
+      <h1 class="aboutme">Blog posts</h1>
+    </div>
 
+    <div class="articles-grid container">
       <% @posts.each do |post| %>
         <div class="article-card">
 

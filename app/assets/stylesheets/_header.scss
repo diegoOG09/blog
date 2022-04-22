@@ -2,14 +2,15 @@
 
 .header {
   text-align: left;
-  font-family: $titles;
+  font-family: $oxygen;
   color: $main;
   font-size: 1.5rem;
-  
+
   .title_title {
     color: $blue;
-    margin-top: 4rem;
+    margin-top: 5.5rem;
     margin-bottom: 1rem;
+    font-size: 1.9rem;
   }
   .subtitle {
     color: rgb(197, 196, 196);
@@ -33,7 +34,7 @@
       text-decoration: none;
       color: $main;
       font-weight: 300;
-      font-family: $other;
+      font-family: $oxygen;
       font-size: 1.3rem;
 
       &:hover {
@@ -55,5 +56,4 @@
       }
     }
   }
-  
 }

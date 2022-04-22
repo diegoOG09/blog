@@ -9,7 +9,7 @@
   background-color: $gray;
   
   .date {
-    font-family: $titles;
+    font-family: $oxygen;
     background-color: $gruv-cards;
     padding: 1rem;
     border-radius: 10px 10px 0 0;
@@ -20,15 +20,15 @@
     padding: 1rem;
     h2 {
       margin: 0 0 1rem 0;
-      font-family: $titles;
+      font-family: $oxygen;
     }
     h3 {
       margin: 0;
-      font-family: $other;
+      font-family: $oxygen;
       font-weight: 300;
     }
     p {
-      font-family: $other;
+      font-family: $oxygen;
       a{
         color: $blue;
         text-decoration: none;
