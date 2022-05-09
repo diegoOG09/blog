@@ -17,6 +17,8 @@ gem 'acts_as_commentable_with_threading'
 
 gem 'will_paginate'
 
+gem 'devise'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 

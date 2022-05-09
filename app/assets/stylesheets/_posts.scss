@@ -1,6 +1,8 @@
 @import "variables";
 
 #posts {
+  margin-top: 3rem;
+  color: $gruv-black;
   .section_title {
     margin-bottom: 3rem;
     font-family: $oxygen;
@@ -8,6 +10,7 @@
       color: $blue;
       font-weight: 300;
       font-size: 1.5rem;
+      margin-top: 0;
       margin-bottom: 1rem;
     }
     .p_aboutme {
@@ -49,8 +52,7 @@
     }
   }
 
-  margin-top: 4rem;
-  color: $gruv-black;
+
   .articles-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
