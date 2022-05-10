@@ -1,0 +1,17 @@
+@import 'variables';
+
+.login-title {
+  color: $main;
+  font-family: $oxygen;
+  padding-top: 1rem;
+}
+
+.field {
+  label {
+    color: $gray;
+    font-family: $oxygen;
+  }
+  input {
+    font-family: $oxygen;
+  }
+}

@@ -6,54 +6,27 @@
   color: $main;
   font-size: 1.5rem;
 
-  .title_title {
-    color: $blue;
-    margin-top: 5.5rem;
-    margin-bottom: 1rem;
-    font-size: 1.9rem;
+  .login-btn {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: $gray;
+    font-size: 1rem;
+    padding: 0;
+    cursor: pointer;
   }
+  
   .subtitle {
     color: rgb(197, 196, 196);
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .3rem;
   }
+}
 
-  #navbar ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.5rem;
-    padding-inline-start: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-
-    a {
-      text-decoration: none;
-      color: $main;
-      font-weight: 300;
-      font-family: $oxygen;
-      font-size: 1.3rem;
-
-      &:hover {
-        color: $gruv-yellowv2;
-        border-bottom: 2px solid $coffee;
-        font-weight: 500;
-        transition: 100ms;
-      }
-    }
-
-    .search {
-      i {
-        width: 1rem;
-        cursor: pointer;
-
-        &:hover {
-          color: $gruv-yellowv2;
-        }
-      }
-    }
-  }
+.title_title {
+  font-family: $oxygen;
+  color: $blue;
+  margin-top: 5.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
 }

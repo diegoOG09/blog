@@ -9,15 +9,29 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
+    if user_signed_in?
+
+    else
+      redirect_to root_path
+    end
   end
 
   # GET /posts/new
   def new
-    @post = Post.new
+    if user_signed_in?
+      @post = Post.new
+    else
+      redirect_to root_path
+    end
   end
 
   # GET /posts/1/edit
   def edit
+    if user_signed_in?
+      
+    else
+      redirect_to root_path
+    end
   end
 
   # POST /posts or /posts.json
