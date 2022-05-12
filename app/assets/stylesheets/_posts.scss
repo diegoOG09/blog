@@ -75,3 +75,21 @@
     }
   }
 }
+
+@media only screen and (max-width: 810px) and (min-width: 375px) {
+  #posts {
+    .section_title {
+      margin-bottom: 1rem;
+      .grid_things {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .articles-grid {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

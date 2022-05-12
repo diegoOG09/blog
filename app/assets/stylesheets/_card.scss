@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 .article-card {
   border-radius: 10px;
@@ -7,7 +7,7 @@
   max-width: 100%;
   margin: 1rem 1rem 1rem 0;
   background-color: $gray;
-  
+
   .date {
     font-family: $oxygen;
     background-color: $gruv-cards;
@@ -15,7 +15,7 @@
     border-radius: 10px 10px 0 0;
     color: #c1dad0;
   }
-  
+
   .article-info {
     padding: 1rem;
     h2 {
@@ -29,13 +29,30 @@
     }
     p {
       font-family: $oxygen;
-      a{
-        color: $blue;
+      a {
+        color: $gruv-cards;
         text-decoration: none;
         font-weight: 600;
       }
     }
   }
+}
 
-  
+@media only screen and (max-width: 375px) {
+  .article-card {
+    margin: 0.5rem auto;
+    .date {
+      padding: 0.2rem 0 0.2rem 0.5rem;
+    }
+    .article-info {
+      padding: 0.3rem;
+      h2 {
+        font-size: 1rem;
+        text-align: center;
+      }
+      h3 {
+        font-size: 0.9rem;
+      }
+    }
+  }
 }

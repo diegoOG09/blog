@@ -1,13 +1,13 @@
 @import 'variables';
 
 #footer {
-  font-family: $titles;
+  font-family: $oxygen;
   .footer1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: $gruv-cards;
-    padding: 3rem 0 3rem 0;
+    padding: 3rem 21% 3rem 21%;
     .footer1_group1 {
       color: $main;
       display: flex;
@@ -36,6 +36,25 @@
       i{
         margin-right: .6rem;
         font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 810px) and (min-width: 375px) {
+  #footer {
+    .footer1 {
+      font-size: .8rem;
+      padding: 1rem 10% 1rem 10%;
+    }
+    .footer2 {
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        a {
+          margin-right: 1rem;
+          font-size: .7rem;
+        }
       }
     }
   }
