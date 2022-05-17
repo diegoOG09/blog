@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts or /posts.json
   def index
     # @posts = Post.all.with_rich_text_content
-    @posts = Post.paginate(:page => params[:page], :per_page=>7)
+    @posts = Post.paginate(:page => params[:page], :per_page=>6)
   end
 
   # GET /posts/1 or /posts/1.json
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     if user_signed_in?
-      
+
     else
       redirect_to root_path
     end
