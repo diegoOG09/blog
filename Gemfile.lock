@@ -74,6 +74,22 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     awesome_nested_set (3.5.0)
       activerecord (>= 4.0.0, < 7.1)
+    aws-eventstream (1.2.0)
+    aws-partitions (1.588.0)
+    aws-sdk-core (3.131.0)
+      aws-eventstream (~> 1, >= 1.0.2)
+      aws-partitions (~> 1, >= 1.525.0)
+      aws-sigv4 (~> 1.1)
+      jmespath (~> 1.0)
+    aws-sdk-kms (1.57.0)
+      aws-sdk-core (~> 3, >= 3.127.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-s3 (1.114.0)
+      aws-sdk-core (~> 3, >= 3.127.0)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.4)
+    aws-sigv4 (1.5.0)
+      aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.17)
     bindex (0.8.1)
     bootsnap (1.11.1)
@@ -120,6 +136,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jmespath (1.6.1)
     loofah (2.15.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -253,6 +270,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts_as_commentable_with_threading
+  aws-sdk-s3
   bootsnap
   capybara
   debug
