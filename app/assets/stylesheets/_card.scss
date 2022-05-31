@@ -6,7 +6,7 @@
   height: auto;
   max-width: 100%;
   margin: 1rem 1rem 1rem 0;
-  background-color: $gray;
+  background-color: $mainv2;
 
   .date {
     font-family: $oxygen;
@@ -30,7 +30,10 @@
     p {
       font-family: $oxygen;
       a {
-        color: $gruv-cards;
+        background-color: $gruv-cards;
+        padding: .3rem .3rem .3rem .5rem;
+        border-radius: 7px;
+        color: $mainv2;
         text-decoration: none;
         font-weight: 600;
       }

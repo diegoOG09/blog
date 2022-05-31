@@ -19,7 +19,7 @@
       margin: 1rem 0;
       color: $gray;
       a {
-        color: $main;
+        color: $gray;
         &:hover {
           color: $blue;
         }
@@ -34,8 +34,9 @@
         padding: 0.7rem;
         width: 18rem;
         h2 {
+          font-weight: 700;
           font-size: 1rem;
-          color: $main;
+          color: $gray;
           text-align: left;
           i {
             font-size: 1rem;
