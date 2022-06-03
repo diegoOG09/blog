@@ -14,9 +14,9 @@
 .trix-content {
   color: #2F383E;
   font-family: 'Oxygen Mono';
-  background-color: rgb(197, 196, 196);
+  background-color: #F7F7F5;
   border-radius: 0 0 5px 5px;
-  padding: 1rem;
+  font-size: .95rem;
 }
 #trix-toolbar-1 {
   border-radius: 5px 5px 0 0;

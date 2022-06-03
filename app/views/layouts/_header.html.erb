@@ -3,8 +3,8 @@
   <h1 class="subtitle">Personal website & blog</h1>
 
   
-  <%= link_to "Sign in", new_user_session_path, class: 'login-btn' %>
+  <%= link_to "Iniciar sesión", new_user_session_path, class: 'login-btn' %>
   <%if user_signed_in? %>
-  <%= button_to "Logout", destroy_user_session_path, method: :delete, class: 'login-btn' %>
+  <%= button_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: 'login-btn' %>
   <%end%>
 </header>

@@ -10,27 +10,32 @@
 
   .date {
     font-family: $oxygen;
-    background-color: $gruv-cards;
+    background-color: $blue;
     padding: 1rem;
     border-radius: 10px 10px 0 0;
-    color: #c1dad0;
+    color: #fbfffd;
+    font-size: .9rem;
   }
 
   .article-info {
+    color: $dark-blue;
     padding: 1rem;
     h2 {
+      font-size: 1.2rem;
       margin: 0 0 1rem 0;
       font-family: $oxygen;
     }
     h3 {
+      color: $dark-blue;
       margin: 0;
       font-family: $oxygen;
       font-weight: 300;
+      font-size: .9rem;
     }
     p {
       font-family: $oxygen;
       a {
-        background-color: $gruv-cards;
+        background-color: $blue;
         padding: .3rem .3rem .3rem .5rem;
         border-radius: 7px;
         color: $mainv2;
@@ -48,7 +53,7 @@
       padding: 0.2rem 0 0.2rem 0.5rem;
     }
     .article-info {
-      padding: 0.3rem;
+      padding: 0.5rem;
       h2 {
         font-size: 1rem;
         text-align: center;

@@ -10,10 +10,11 @@
     text-decoration: none;
     background-color: transparent;
     border: none;
-    color: $gray;
+    color: rgb(197, 196, 196);
     font-size: 1rem;
     padding: 0;
     cursor: pointer;
+    
   }
   
   .subtitle {
@@ -26,7 +27,7 @@
 .title_title {
   font-family: $oxygen;
   color: $blue;
-  margin-top: 5.5rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   font-size: 1.9rem;
 }
