@@ -16,6 +16,7 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 2rem;
+      margin-top: 1rem;
 
       .shared_count {
         display: flex;
@@ -56,6 +57,7 @@
   }
 
   #title {
+    font-size: 2.5rem;
     font-family: $content;
     text-align: center;
   }
