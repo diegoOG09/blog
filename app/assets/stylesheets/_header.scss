@@ -30,6 +30,10 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-size: 1.9rem;
+  a {
+    color: $blue;
+    text-decoration: none;
+  }
 }
 
 @media only screen and (max-width: 375px) {

@@ -11,15 +11,6 @@ html {
   margin: 0 auto;
 }
 
-#tagsModal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  color: $gruv-black;
-  font-family: $other;
-}
-
 @media only screen and (max-width: 810px) and (min-width: 375px) {
   .container {
     max-width: 90%;

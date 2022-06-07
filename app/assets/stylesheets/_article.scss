@@ -10,6 +10,7 @@
 
   #article-content {
     padding: 0rem;
+    font-family: 'Raleway';
     .shared {
       display: flex;
       align-items: center;
@@ -19,7 +20,7 @@
       .shared_count {
         display: flex;
         align-items: center;
-        font-family: $oxygen;
+        font-family: $content;
         i {
           color: $gray;
           font-size: 1.5rem;
@@ -31,7 +32,7 @@
         border-radius: 3px;
         padding: 1rem;
         color: $main;
-        font-family: $oxygen;
+        font-family: $content;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 600;
@@ -55,12 +56,12 @@
   }
 
   #title {
-    font-family: $oxygen;
+    font-family: $content;
     text-align: center;
   }
 
   .trix-content {
     line-height: 1.9rem;
-    font-family: $oxygen;
+    font-family: $content;
   }
 }
