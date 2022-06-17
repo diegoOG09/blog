@@ -7,7 +7,8 @@ class ArticlesController < ApplicationController
 
   def articles
     if user_signed_in?
-        @articles = Post.all
+      # @articles = Post.all
+      @articles = Post.all.paginate(:page => params[:page], :per_page=>10)
     else
       redirect_to root_path
     end
