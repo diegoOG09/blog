@@ -7,8 +7,7 @@ Rails.application.routes.draw do
   resources :posts, :tags
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
-
+  get '/articles/articles', to: "articles#articles", as: "articles"
   get '/articles/article/:article_id', to: "articles#article", as: "article"
+  
 end

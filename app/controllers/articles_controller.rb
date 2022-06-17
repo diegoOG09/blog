@@ -5,6 +5,14 @@ class ArticlesController < ApplicationController
     # @articles = Post.paginate(:page => params[:article_id], :per_page=>1)
   end
 
+  def articles
+    if user_signed_in?
+        @articles = Post.all
+    else
+      redirect_to root_path
+    end
+  end
+
   private
     def set_article
       @article = Post.find(params[:id])

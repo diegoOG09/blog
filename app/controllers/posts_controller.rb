@@ -51,8 +51,6 @@ class PostsController < ApplicationController
 
   # PATCH/PUT /posts/1 or /posts/1.json
   def update
-    
-
     respond_to do |format|
       post_record = Post.find(params[:post_status][:id])
     
