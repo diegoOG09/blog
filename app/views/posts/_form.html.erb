@@ -31,6 +31,25 @@
     <%= form.rich_text_area :content, :required => true %>
   </div>
 
+  <% if @post.approve == true %>
+    <div class="input-group-text">
+      <span>Approve</span>
+      <input id="post_status" type="checkbox" size="9" name="post_status[approve]" checked>
+    </div>
+
+    <div class="input-group-text">
+      <span>Ban</span>
+      <input id="post_status" type="checkbox" size="9" name="post_status[bann]">
+    </div>
+  <% else %>
+    <span>Approve</span>
+    <input id="post_status" type="checkbox" size="9" name="post_status[approve]">
+
+    <span>Ban</span>
+    <input id="post_status" type="checkbox" size="9" name="post_status[bann]">
+  <%end%>
+  <input type="hidden" name="post_status[id]" value="<%= @post.id%>">
+
   <div>
     <%= form.submit %>
   </div>

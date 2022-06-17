@@ -21,6 +21,10 @@
 .trix-content h1 {
   font-size: 1.5rem;
 }
+.trix-content a {
+  color: #34495e;
+  text-decoration: none;
+}
 #trix-toolbar-1 {
   border-radius: 5px 5px 0 0;
   background-color:rgb(197, 196, 196);

@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts or /posts.json
   def index
     # @posts = Post.all.with_rich_text_content
-    @posts = Post.paginate(:page => params[:page], :per_page=>6)
+    @posts = Post.all.where(approve: true).paginate(:page => params[:page], :per_page=>6)
   end
 
   # GET /posts/1 or /posts/1.json
@@ -51,7 +51,17 @@ class PostsController < ApplicationController
 
   # PATCH/PUT /posts/1 or /posts/1.json
   def update
+    
+
     respond_to do |format|
+      post_record = Post.find(params[:post_status][:id])
+    
+      if params[:post_status][:approve] == "on"
+        post_record.approve = true
+      else params[:post_status][:bann] == "on"
+        post_record.approve = false
+      end
+      post_record.save
       if @post.update(post_params)
         format.html { redirect_to post_url(@post), notice: "Post was successfully updated." }
         format.json { render :show, status: :ok, location: @post }
