@@ -8,6 +8,7 @@
   font-family: $oxygen;
   color: $main;
   font-size: 1.5rem;
+  border-bottom: 1px solid #ebebeb;
 
   .home {
     display: flex;
@@ -34,6 +35,7 @@
     color: rgb(197, 196, 196);
     font-size: 1rem;
     margin: 0;
+    margin-bottom: .5rem;
   }
 }
 

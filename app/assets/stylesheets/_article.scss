@@ -2,7 +2,6 @@
 
 #article {
   color: $gray;
-  border-radius: 30px 30px 0 0;
   margin-top: 4rem;
   margin-bottom: 4rem;
   width: 100%;
@@ -10,6 +9,21 @@
   #article-content {
     padding: 0rem;
     font-family: 'Raleway';
+
+    .reading_minutes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+
+      .content_table {
+        background-color: gray;
+      }
+    }
     .shared {
       display: flex;
       align-items: center;
@@ -45,15 +59,6 @@
   }
 
   //individual article styles
-  #cover {
-    background-color: $mainv2;
-    .cover_img {
-      border-radius: 30px 30px 0 0;
-      display: block;
-      width: 100%;
-      background-size: cover;
-    }
-  }
 
   #title {
     font-size: 2.5rem;
@@ -62,6 +67,7 @@
   }
 
   .trix-content {
+    padding: 0 2rem;
     line-height: 1.9rem;
     font-family: $content;
   }

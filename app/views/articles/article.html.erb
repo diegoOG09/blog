@@ -1,15 +1,25 @@
 <div id="article" class="container">
   <div id="article-content">
-    <span class="rading_minutes">
+    <h1 id="title"> <%= @article.title  %> </h1>
+    <span class="reading_minutes">
       🕛Reading time: <%= @article.rich_text_content.to_plain_text.reading_time :format => :approx %>
     </span>
     <div class="shared">
       <span class="shared_count"><i class="fa-brands fa-twitter-square"></i>10</span>
       <a class="demo_button" href='#'>ver demo<i class="fa-solid fa-right-long"></i></a>
     </div>
+
+    <div class="article-grid">
+      <div class="content_table">
+        Aqui va la tabla de contenidos
+      </div>
+      <div class="article_content">
+        <div> <%= @article.content %> </div>
+      </div>
+      <%= render "layouts/sidebar" %>
+    </div>
   
-    <h1 id="title"> <%= @article.title  %> </h1>
-    <div> <%= @article.content %> </div>
+    
   </div>
 </div>
 

@@ -1,0 +1,35 @@
+@import "variables";
+
+.sidebar {
+  color: $blue;
+  font-family: $content;
+  .card {
+    margin: 0 0 2.5rem 0;
+    border-radius: 10px;
+    border: 1px solid #ebebeb;
+
+    .cards_titles {
+      margin: 0 auto;
+      padding: .7rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #ebebeb;
+    }
+    .card_content {
+      padding: .7rem .9rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $dark-blue;
+      a {
+        color: $gray;
+        &:hover {
+          color: $blue;
+        }
+      }
+
+      i {
+        margin-right: .5rem;
+      }
+    }
+  }
+  
+}

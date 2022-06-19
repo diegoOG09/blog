@@ -13,18 +13,7 @@
       margin-top: 0;
       margin-bottom: 1rem;
     }
-    .p_aboutme {
-      font-size: 1rem;
-      line-height: 1.5rem;
-      margin: 1rem 0;
-      color: $dark-blue;
-      a {
-        color: $gray;
-        &:hover {
-          color: $blue;
-        }
-      }
-    }
+
     .grid_things {
       color: $dark-blue;
       display: grid;
@@ -75,10 +64,7 @@
       }
     }
     
-    .sidebar {
-      background-color: gray;
-      border: 1px solid black;
-    }
+    
   }
 }
 
