@@ -48,20 +48,41 @@
     </div>
 
     <div class="articles-grid container">
-      <% @posts.each do |post| %>
-        <div class="article-card">
-          <div class="date">
-            <%= post.created_at.strftime("%d - %B - %Y") %>
+
+      <div class="articles">
+        <% @posts.each do |post| %>
+          <div class="article-card">
+            <div class="thumb">
+              <% if post.cover.attached? %>
+                <%= image_tag(url_for(post.cover), :class => "cover_img", :loading => "lazy") %>
+              <%end%>
+            </div>
+            <div class="article-info">
+
+              <div class="meta_info">
+                <span class="date">
+                  <%= post.created_at.strftime("%d - %B - %Y") %>
+                </span>
+                <span class="reading_minutes">
+                  🕛Reading time: <%= post.rich_text_content.to_plain_text.reading_time :format => :approx %>
+                </span>
+              </div>
+              
+              <h2><%= post.title %></h2>
+              <h3><%= post.description %></h3>
+              <p> <%= link_to "Read more...", article_path(article_id: post.id) %> </p>
+            </div>
           </div>
-          <div class="article-info">
-            <h2><%= post.title %></h2>
-            <h3><%= post.description %></h3>
-            <p> <%= link_to "Read more...", article_path(article_id: post.id) %> </p>
-          </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
+
+      <div class="sidebar">
+        <p>Esto es para la sidebar</p>
+      </div>
+      
       <%= will_paginate @posts %>
     </div>
+
   </main>
 
 </div>

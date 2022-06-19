@@ -55,7 +55,7 @@
 
   .articles-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 80% 20%;
 
     .presentation-text {
       margin-top: 3rem;
@@ -73,6 +73,11 @@
         color: gray;
         font-style: italic;
       }
+    }
+    
+    .sidebar {
+      background-color: gray;
+      border: 1px solid black;
     }
   }
 }

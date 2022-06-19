@@ -1,10 +1,17 @@
 <header class="header container">
-  <h1 class="title_title"><a href="/">Diego Salinas</a></h1>
-  <h1 class="subtitle">Personal website & blog</h1>
+
+  <div class="home">
+    <h1 class="title_title"><a href="/">Diego Salinas</a></h1>
+    <h1 class="subtitle">Personal website & blog</h1>
+  </div>
+
+  <div class="sign_in">
+    <%= link_to "Iniciar sesión", new_user_session_path, class: 'login-btn' %>
+    <%if user_signed_in? %>
+      <%= button_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: 'login-btn' %>
+    <%end%>
+  </div>
 
   
-  <%= link_to "Iniciar sesión", new_user_session_path, class: 'login-btn' %>
-  <%if user_signed_in? %>
-  <%= button_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: 'login-btn' %>
-  <%end%>
+  
 </header>

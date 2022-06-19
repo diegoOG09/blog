@@ -21,6 +21,8 @@ gem 'devise'
 
 gem 'aws-sdk-s3', require: false
 
+gem 'readingtime'
+
 gem 'rack-cors'
 
 # Use the Puma web server [https://github.com/puma/puma]

@@ -1,27 +1,40 @@
 @import "variables";
 
 .article-card {
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: grid;
+  grid-template-columns: 36% 70%;
   height: auto;
   max-width: 100%;
   margin: 1rem 1rem 1rem 0;
-  background-color: $mainv2;
 
-  .date {
-    font-family: $oxygen;
-    background-color: $blue;
-    padding: 1rem;
-    border-radius: 10px 10px 0 0;
-    color: #fbfffd;
-    font-size: .9rem;
+  .thumb {
+
   }
 
   .article-info {
     color: $dark-blue;
     padding: 1rem;
+
+    .meta_info {
+      margin: 0 0 1rem 0;
+      .date {
+        font-family: $oxygen;
+        color: $blue;
+        font-size: .9rem;
+      }
+  
+      .reading_minutes {
+        color: $blue;
+        font-family: $oxygen;
+        font-size: .9rem;
+      }
+    }
+
+    
+
     h2 {
-      font-size: 1.2rem;
+      width: 80%;
+      font-size: 1.8rem;
       margin: 0 0 1rem 0;
       font-family: $oxygen;
     }
@@ -31,6 +44,7 @@
       font-family: $oxygen;
       font-weight: 300;
       font-size: .9rem;
+      width: 80%;
     }
     p {
       font-family: $oxygen;

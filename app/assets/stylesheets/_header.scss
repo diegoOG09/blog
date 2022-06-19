@@ -1,10 +1,23 @@
 @import "variables";
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-align: left;
   font-family: $oxygen;
   color: $main;
   font-size: 1.5rem;
+
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sign_in {
+    display: flex;
+    align-items: center;
+  }
 
   .login-btn {
     text-decoration: none;
@@ -20,7 +33,7 @@
   .subtitle {
     color: rgb(197, 196, 196);
     font-size: 1rem;
-    margin-bottom: .3rem;
+    margin: 0;
   }
 }
 
