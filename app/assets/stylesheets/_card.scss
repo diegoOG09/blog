@@ -1,8 +1,8 @@
 @import "variables";
 
 .article-card {
-  display: grid;
-  grid-template-columns: 36% 70%;
+  display: flex;
+  flex-direction: row;
   height: auto;
   max-width: 100%;
   margin: 1rem 1rem 1rem 0;
@@ -13,7 +13,7 @@
 
   .article-info {
     color: $dark-blue;
-    padding: 1rem;
+    padding: 0 0 0 .7rem;
 
     .meta_info {
       margin: 0 0 1rem 0;
@@ -29,9 +29,6 @@
         font-size: .9rem;
       }
     }
-
-    
-
     h2 {
       width: 80%;
       font-size: 1.8rem;
@@ -60,20 +57,31 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 1115px) and (min-width: 375px) {
   .article-card {
-    margin: 0.5rem auto;
+    flex-direction: column;
     .date {
       padding: 0.2rem 0 0.2rem 0.5rem;
     }
     .article-info {
       padding: 0.5rem;
+      .meta_info {
+        display: flex;
+        gap: .2rem;
+        flex-direction: column;
+        .date {
+          padding: 0;
+        }
+      }
       h2 {
-        font-size: 1rem;
-        text-align: center;
+        width: 80%;
+        font-size: 1.2rem;
+        text-align: left;
       }
       h3 {
+        width: 100%;
         font-size: 0.9rem;
+        text-align: justify;
       }
     }
   }

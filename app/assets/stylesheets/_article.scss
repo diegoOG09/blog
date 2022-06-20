@@ -21,7 +21,13 @@
       grid-template-columns: 20% 60% 20%;
 
       .content_table {
-        background-color: gray;
+        padding: .7rem .9rem;
+        border: 1px solid #ebebeb;
+        border-radius: 10px;
+
+        a {
+          text-decoration: none;
+        }
       }
     }
     .shared {
