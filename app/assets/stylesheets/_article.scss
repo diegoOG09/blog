@@ -78,3 +78,29 @@
     font-family: $content;
   }
 }
+
+// media queries
+
+@media only screen and (max-width: 1550px) and (min-width: 375px) {
+  #article {
+    #article-content {
+      .shared {
+        justify-content: center;
+        gap: 1.5rem;
+      }
+      .article-grid {
+        display: flex;
+        flex-direction: column;
+
+        .content_table {
+          margin-bottom: 1rem;         
+        }
+      }
+    }
+    .trix-content {
+      padding: 0 .5rem;
+      border-bottom: 1px solid #ebebeb;
+      margin-bottom: 1rem;
+    }
+  }
+}
