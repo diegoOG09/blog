@@ -8,7 +8,12 @@
   margin: 1rem 1rem 1rem 0;
 
   .thumb {
-
+    background-size: cover;
+    max-width: 340px;
+    .cover_img {
+      max-width: 340px;
+      background-size: cover;
+    }
   }
 
   .article-info {
