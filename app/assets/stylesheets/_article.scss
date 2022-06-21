@@ -8,7 +8,7 @@
 
   #article-content {
     padding: 0rem;
-    font-family: 'Raleway';
+    font-family: "Raleway";
 
     .reading_minutes {
       display: flex;
@@ -21,7 +21,7 @@
       grid-template-columns: 20% 60% 20%;
 
       .content_table {
-        padding: .7rem .9rem;
+        padding: 0.7rem 0.9rem;
         border: 1px solid #ebebeb;
         border-radius: 10px;
 
@@ -81,7 +81,7 @@
 
 // media queries
 
-@media only screen and (max-width: 1550px) and (min-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width: 1280px) {
   #article {
     #article-content {
       .shared {
@@ -93,12 +93,12 @@
         flex-direction: column;
 
         .content_table {
-          margin-bottom: 1rem;         
+          margin-bottom: 1rem;
         }
       }
     }
     .trix-content {
-      padding: 0 .5rem;
+      padding: 0 0.5rem;
       border-bottom: 1px solid #ebebeb;
       margin-bottom: 1rem;
     }

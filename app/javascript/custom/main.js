@@ -1,24 +1,33 @@
 const tableOfContent = document.querySelector('.content_table')
 const content = document.querySelector('.trix-content')
-const headingsArray = document.querySelectorAll('h1')
+const headingsArr = document.querySelectorAll('h1')
+const linksArr = document.querySelectorAll('a')
+const title = document.querySelector('#title').textContent
 
 let i = 1
 
-headingsArray.forEach(heading => {
+function changeTabTitle(title) {
+  document.title = title
+}
+
+changeTabTitle(title)
+
+headingsArr.forEach(heading => {
   if (heading.parentNode == content) {
     console.log(heading)
     heading.setAttribute('id', i)
     i++
+    linksArr.forEach(link => {
+      if (link.parentNode == heading) {
+        link.setAttribute('target', '_blank')
+      }
+    })
   }
 })
 
 tocbot.init({
-  // Where to render the table of contents.
   tocSelector: '.content_table',
-  // Where to grab the headings to build the table of contents.
   contentSelector: '.trix-content',
-  // Which headings to grab inside of the contentSelector element.
   headingSelector: 'h1',
-  // Headings that match the ignoreSelector will be skipped.
   ignoreSelector: 'strong'
 })
