@@ -4,8 +4,14 @@
     <span class="reading_minutes">
       🕛Reading time: <%= @article.rich_text_content.to_plain_text.reading_time :format => :approx %>
     </span>
+    
     <div class="shared">
-      <span class="shared_count"><i class="fa-brands fa-twitter-square"></i>10</span>
+      <span class="shared_count">
+        <a href="https://twitter.com/intent/tweet?url=<%=request.original_url%>&text=Este artículo me ha parecido interesante 💡"  onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
+          <i class="fa-brands fa-twitter-square"></i>
+        </a>
+      </span>
+      
       <a class="demo_button" href='#'>ver demo<i class="fa-solid fa-right-long"></i></a>
     </div>
     <h4 style="padding-left: .7rem; margin-bottom: 1rem;">Tabla de contenidos</h4>  
