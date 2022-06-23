@@ -72,6 +72,8 @@ GEM
       awesome_nested_set (>= 3.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    ansi (1.5.0)
+    ast (2.4.2)
     awesome_nested_set (3.5.0)
       activerecord (>= 4.0.0, < 7.1)
     aws-eventstream (1.2.0)
@@ -105,13 +107,6 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     childprocess (4.1.0)
-    coffee-rails (5.0.0)
-      coffee-script (>= 2.2.0)
-      railties (>= 5.2.0)
-    coffee-script (2.4.1)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
     debug (1.5.0)
@@ -125,7 +120,6 @@ GEM
       warden (~> 1.2.3)
     digest (3.1.0)
     erubi (1.10.0)
-    execjs (2.8.1)
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -175,6 +169,11 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.3-x86_64-linux)
       racc (~> 1.4)
+    oga (3.3)
+      ast
+      ruby-ll (~> 2.1)
+    ogp (0.5.0)
+      oga (~> 3.3)
     orm_adapter (0.5.0)
     pg (1.3.5)
     public_suffix (4.0.6)
@@ -222,6 +221,9 @@ GEM
       actionpack (>= 5.0)
       railties (>= 5.0)
     rexml (3.2.5)
+    ruby-ll (2.1.2)
+      ansi
+      ast
     ruby-vips (2.1.2)
       ffi (~> 1.12)
     rubyzip (2.3.2)
@@ -239,8 +241,6 @@ GEM
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
-    social-share-button (1.2.4)
-      coffee-rails
     sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -288,6 +288,7 @@ DEPENDENCIES
   image_processing (~> 1.2)
   importmap-rails
   jbuilder
+  ogp
   pg
   puma (~> 5.0)
   rack-cors
@@ -297,7 +298,6 @@ DEPENDENCIES
   sass-rails
   sassc-rails
   selenium-webdriver
-  social-share-button
   sprockets-rails
   stimulus-rails
   tzinfo-data
