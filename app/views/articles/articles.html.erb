@@ -1,7 +1,7 @@
 <div id="articles-list" class="container" style="margin-top:2rem;">
   <%= @articles.length.times do |position_article| %>
   <% article = @articles[position_article] %>
-    <a href="/posts/<%= article.id %>" target="_blank" rel="noopener">
+    <a href="/posts/<%= article.id %>">
       <%= article.title%>
     </a>
     <hr>

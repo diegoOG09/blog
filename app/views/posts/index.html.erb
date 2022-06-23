@@ -26,7 +26,7 @@
               
               <h2><%= post.title %></h2>
               <h3><%= post.description %></h3>
-              <p> <%= link_to "Read more...", article_path(article_id: post.id) %> </p>
+              <p><%= link_to "Read more...", article_path(post) %></p>
             </div>
           </div>
         <% end %>

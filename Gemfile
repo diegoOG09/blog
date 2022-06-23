@@ -27,6 +27,8 @@ gem 'rack-cors'
 
 gem 'ogp'
 
+gem 'friendly_id', '~> 5.4.0'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 

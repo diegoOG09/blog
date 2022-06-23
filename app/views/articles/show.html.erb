@@ -1,13 +1,13 @@
 <div id="article" class="container">
   <div id="article-content">
-    <h1 id="title"> <%= @article.title  %> </h1>
+    <h1 id="title"> <%= @arts.title  %> </h1>
     <span class="reading_minutes">
-      🕛Reading time: <%= @article.rich_text_content.to_plain_text.reading_time :format => :approx %>
+      🕛Reading time: <%= @arts.rich_text_content.to_plain_text.reading_time :format => :approx %>
     </span>
     
     <div class="shared">
       <span class="shared_count">
-        <a href="https://twitter.com/intent/tweet?url=<%=request.original_url%>&text=Este artículo me ha parecido interesante 💡"  onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
+        <a href="https://twitter.com/intent/tweet?url=<%=request.original_url%>&text=Este artículo me ha parecido interesante 💡" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
           <i class="fa-brands fa-twitter-square"></i>
         </a>
       </span>
@@ -18,7 +18,7 @@
     <div class="article-grid">
       <div class="content_table js-toc-content"></div>
       <div class="article_content">
-        <div> <%= @article.content %> </div>
+        <div> <%= @arts.content %> </div>
       </div>
       <%= render "layouts/sidebar" %>
     </div>

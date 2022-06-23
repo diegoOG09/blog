@@ -1,13 +1,13 @@
 class ArticlesController < ApplicationController
-  
-  def article
-    @article = Post.find(params[:article_id])
-    # @articles = Post.paginate(:page => params[:article_id], :per_page=>1)
+  before_action :set_article, only: %i[ show ]
+
+  def show
+    @arts = Post.friendly.find(params[:id])
+    # @article = Post.find(params[:id])
   end
 
   def articles
     if user_signed_in?
-      # @articles = Post.all
       @articles = Post.all.paginate(:page => params[:page], :per_page=>10)
     else
       redirect_to root_path
@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
 
   private
     def set_article
-      @article = Post.find(params[:id])
+      @art = Post.friendly.find(params[:id])
     end
     # Only allow a list of trusted parameters through.
     def article_params

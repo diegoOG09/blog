@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   get '/articles/articles', to: "articles#articles", as: "articles"
-  get '/articles/article/:article_id', to: "articles#article", as: "article"
+  get 'article/:id', to: "articles#show", as: "article"
   
 end

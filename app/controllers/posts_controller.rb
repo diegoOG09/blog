@@ -3,7 +3,6 @@ class PostsController < ApplicationController
 
   # GET /posts or /posts.json
   def index
-    # @posts = Post.all.with_rich_text_content
     @posts = Post.all.where(approve: true).paginate(:page => params[:page], :per_page=>6)
   end
 
@@ -82,7 +81,7 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post = Post.find(params[:id])
+      @post = Post.friendly.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
