@@ -7,10 +7,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://diego-salinas-blog.herokuapp.com/" />
-    <meta property="og:title" content="Diego Salinas" />
-    <meta property="og:description" content="Este articulo me ha parecido interesante..."  />
-    <meta property="og:image" content="http://start.makandra.de/assets/open_graph.png" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="<%= yield :title %>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="<%= yield :url %>" />
+    <meta property="og:image" content="https://diego-salinas-blog-images.s3.amazonaws.com/diegosalinas.png" />
+
+    <!-- Twitter card property -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@diegosalinas" />
+    <meta name="twitter:title" content="<%= yield :title %>" />
+    <meta name="twitter:description" content="<%= yield :description %>">
+    <meta name="twitter:creator" content="@diegosalinas" />
+    <meta name="twitter:image" content="https://diego-salinas-blog-images.s3.amazonaws.com/diegosalinas.png" />
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>

@@ -1,3 +1,8 @@
+<%= content_for :title, @article.title %>
+<%= content_for :description, @article.description %>
+<%= content_for :url, request.original_url %>
+
+
 <div id="article" class="container">
   <div id="article-content">
     <h1 id="title"> <%= @article.title  %> </h1>
