@@ -18,6 +18,13 @@
   .sign_in {
     display: flex;
     align-items: center;
+    gap: .5rem;
+    i {
+      color: $dark-blue;
+    }
+    .button_to {
+      padding-bottom: .45rem;
+    }
   }
 
   .login-btn {
@@ -28,7 +35,6 @@
     font-size: 1rem;
     padding: 0;
     cursor: pointer;
-    
   }
   
   .subtitle {

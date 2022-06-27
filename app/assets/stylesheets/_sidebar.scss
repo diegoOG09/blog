@@ -10,12 +10,14 @@
 
     .cards_titles {
       margin: 0 auto;
-      padding: .7rem 1rem;
+      padding: 0.7rem 1rem;
       text-align: center;
-      border-bottom: 1px solid #ebebeb;
+      border-bottom: 1px solid $gray-light;
+      font-weight: 700;
+      font-size: 1.1rem;
     }
     .card_content {
-      padding: .7rem .9rem;
+      padding: 0.7rem 0.9rem;
       font-size: 1rem;
       line-height: 1.5rem;
       color: $dark-blue;
@@ -27,9 +29,8 @@
       }
 
       i {
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
     }
   }
-  
 }

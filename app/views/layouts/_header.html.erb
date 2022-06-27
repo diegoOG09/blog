@@ -4,16 +4,23 @@
     <h1 class="subtitle">Personal website & blog</h1>
   </div>
 
-  <% if cookies[:theme] == "light" %>
-    <%= link_to "go dark", root_path(theme: "dark") %>
-  <% else %>
-    <%= link_to "go light", root_path(theme: "light") %>
-  <% end %>
-
   <div class="sign_in">
     <%= link_to "Iniciar sesión", new_user_session_path, class: 'login-btn' %>
     <%if user_signed_in? %>
       <%= button_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: 'login-btn' %>
     <%end%>
+    <% if cookies[:theme] == "light" %>
+    <span>
+      <a href="/?theme=dark">
+        <i class="fas fa-moon"></i>
+      </a>
+    </span>
+    <% else %>
+      <span>
+        <a href="/?theme=light">
+          <i class="fas fa-moon"></i>
+        </a>
+      </span>
+    <% end %>
   </div>
 </header>

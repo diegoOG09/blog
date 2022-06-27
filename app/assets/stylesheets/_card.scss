@@ -24,12 +24,12 @@
       .date {
         font-family: $content;
         color: $blue;
-        font-size: .9rem;
+        font-size: .95rem;
       }
       .reading_minutes {
         font-family: $content;
         color: $blue;
-        font-size: .9rem;
+        font-size: .95rem;
       }
     }
     h2 {
@@ -43,8 +43,9 @@
       margin: 0;
       letter-spacing: 1px;
       font-family: $content;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 1rem;
+      font-style: normal;
       width: 80%;
     }
     .goto_article_btn {

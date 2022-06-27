@@ -1,0 +1,48 @@
+@import 'variables';
+
+html.light {
+  color: black;
+  background-color: white;
+}
+
+html.dark {
+  h2 {
+    color: $light;
+  }
+  .article-card .article-info .meta_info .reading_minutes {
+    color: $gruv-light;
+    font-weight: 500;
+  }
+  .article-card .article-info .meta_info .date {
+    font-weight: 400;
+    color: $gruv-light;
+  }
+  .article-card .article-info h4 {
+    color: $gruv-light;
+  }
+  .sidebar .card .card_content {
+    color: $gruv-light;
+  }
+  .sidebar .card .card_content i {
+    color: $gruv-light;
+  }
+  .sidebar .card .cards_titles {
+    color: $gruv-light;
+  }
+  .sidebar .card {
+    border: 1px solid $gray-dark;
+  }
+  .sidebar .card .cards_titles {
+    border-bottom: 1px solid $gray-dark;
+  }
+  .article-card .article-info .goto_article_btn a {
+    color: $gruv-light;
+  }
+  .article-card .thumb .cover_img {
+    filter: brightness(75%);
+  }
+  header {
+    border-bottom: 1px solid $gray-dark;
+  }
+  background-color: $dark;
+}
