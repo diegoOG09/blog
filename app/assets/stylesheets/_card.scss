@@ -6,31 +6,29 @@
   height: auto;
   max-width: 100%;
   margin: 1rem 1rem 1rem 0;
-
   .thumb {
     background-size: cover;
     max-width: 340px;
     .cover_img {
       max-width: 340px;
       background-size: cover;
+      border-radius: 10px;
     }
   }
-
   .article-info {
     color: $dark-blue;
-    padding: 0 0 0 .7rem;
+    padding: 0 0 0 1.5rem;
 
     .meta_info {
       margin: 0 0 1rem 0;
       .date {
-        font-family: $oxygen;
+        font-family: $content;
         color: $blue;
         font-size: .9rem;
       }
-  
       .reading_minutes {
+        font-family: $content;
         color: $blue;
-        font-family: $oxygen;
         font-size: .9rem;
       }
     }
@@ -38,21 +36,23 @@
       width: 80%;
       font-size: 1.8rem;
       margin: 0 0 1rem 0;
-      font-family: $oxygen;
+      font-family: $content;
     }
-    h3 {
+    h4 {
       color: $dark-blue;
       margin: 0;
-      font-family: $oxygen;
+      letter-spacing: 1px;
+      font-family: $content;
       font-weight: 300;
-      font-size: .9rem;
+      font-size: 1rem;
       width: 80%;
     }
-    p {
+    .goto_article_btn {
       font-family: $oxygen;
       a {
+        font-family: $content;
         background-color: $blue;
-        padding: .3rem .3rem .3rem .5rem;
+        padding: .4rem .4rem .4rem .5rem;
         border-radius: 7px;
         color: $mainv2;
         text-decoration: none;

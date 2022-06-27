@@ -17,16 +17,16 @@
             <div class="article-info">
               <div class="meta_info">
                 <span class="date">
-                  <%= post.created_at.strftime("%d - %B - %Y") %>
+                  <%= post.created_at.strftime("%d %B %Y") %> •
                 </span>
                 <span class="reading_minutes">
-                  🕛Reading time: <%= post.rich_text_content.to_plain_text.reading_time :format => :approx %>
+                  <%= post.rich_text_content.to_plain_text.reading_time :format => :approx %> read
                 </span>
               </div>
               
               <h2><%= post.title %></h2>
-              <h3><%= post.description %></h3>
-              <p><%= link_to "Read more...", article_path(post) %></p>
+              <h4><%= post.description %></h4>
+              <p class="goto_article_btn"><%= link_to "Read more...", article_path(post) %></p>
             </div>
           </div>
         <% end %>
