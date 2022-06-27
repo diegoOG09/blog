@@ -4,6 +4,12 @@
     <h1 class="subtitle">Personal website & blog</h1>
   </div>
 
+  <% if cookies[:theme] == "light" %>
+    <%= link_to "go dark", root_path(theme: "dark") %>
+  <% else %>
+    <%= link_to "go light", root_path(theme: "light") %>
+  <% end %>
+
   <div class="sign_in">
     <%= link_to "Iniciar sesión", new_user_session_path, class: 'login-btn' %>
     <%if user_signed_in? %>

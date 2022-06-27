@@ -6,6 +6,16 @@ html {
   height: 100vh;
 }
 
+body.light {
+  color: black;
+  background-color: white;
+}
+
+body.dark {
+  color: white;
+  background-color: black;
+}
+
 .container {
   max-width: 65%;
   margin: 0 auto;
