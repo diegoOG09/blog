@@ -2,7 +2,7 @@
   <div id="article-content">
     <h1 id="title"> <%= @arts.title  %> </h1>
     <span class="reading_minutes">
-      🕛Reading time: <%= @arts.rich_text_content.to_plain_text.reading_time :format => :approx %>
+     • <%= @arts.rich_text_content.to_plain_text.reading_time :format => :approx %> read
     </span>
     
     <div class="shared">

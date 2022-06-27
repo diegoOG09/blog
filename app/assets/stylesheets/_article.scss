@@ -2,17 +2,17 @@
 
 #article {
   color: $gray;
-  margin-top: 4rem;
   margin-bottom: 4rem;
+  margin-top: 4rem;
   width: 100%;
 
   #article-content {
-    padding: 0rem;
     font-family: "Raleway";
+    padding: 0rem;
 
     .reading_minutes {
-      display: flex;
       align-items: center;
+      display: flex;
       justify-content: center;
     }
 
@@ -24,7 +24,11 @@
         padding: 0.7rem 0.9rem;
         border: 1px solid #ebebeb;
         border-radius: 10px;
-
+        .toc-list .toc-list-item a {
+          &::before {
+            content: none;
+          }
+        }
         a {
           text-decoration: none;
         }

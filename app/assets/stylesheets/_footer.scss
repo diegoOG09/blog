@@ -1,24 +1,16 @@
 @import "variables";
 
 #footer {
-  font-family: $oxygen;
-  .footer1 {
-    display: flex;
-    align-items: center;
-    background-color: $blue;
-    padding: 3rem 0 3rem 0;
-    .footer1_group1 {
-      color: $main;
+  font-family: $content;
+  .footer {
+    background-color: $darker;
+    border-radius: 10px;
+    p {
       display: flex;
       align-items: center;
-    }
-    .footer1_group2 {
-      a {
-        color: $main;
-        font-weight: 500;
-        text-decoration: none;
-        margin-left: 1rem;
-      }
+      justify-content: center;
+      padding: 4rem;
+      color: $gruv-light;
     }
   }
 }

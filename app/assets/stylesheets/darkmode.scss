@@ -9,6 +9,9 @@ html.dark {
   h2 {
     color: $light;
   }
+  h4 {
+    color: $gruv-light;
+  }
   .article-card .article-info .meta_info .reading_minutes {
     color: $gruv-light;
     font-weight: 500;
@@ -39,6 +42,32 @@ html.dark {
     color: $gruv-light;
   }
   .article-card .thumb .cover_img {
+    filter: brightness(75%);
+  }
+  #article #article-content .article-grid .content_table {
+    border: 1px solid $gray-dark;
+    color: $gruv-light;
+  }
+  #article #title {
+    color: $gruv-light;
+  }
+  .trix-content h1 {
+    color: $gruv-light;
+  }
+  .trix-content a {
+    color: $gruv-light;
+  }
+  .trix-content * {
+    font-style: normal;
+    color: $gruv-light;
+  }
+  #article #article-content .reading_minutes {
+    color: $gruv-light;
+  }
+  #article #article-content .shared .shared_count i {
+    color: $gruv-light;
+  }
+  .trix-content img {
     filter: brightness(75%);
   }
   header {
