@@ -9,7 +9,6 @@
   #article-content {
     font-family: "Raleway";
     padding: 0rem;
-
     .reading_minutes {
       align-items: center;
       display: flex;
@@ -19,11 +18,10 @@
     .article-grid {
       display: grid;
       grid-template-columns: 20% 60% 20%;
-
       .content_table {
-        padding: 0.7rem 0.9rem;
-        border: 1px solid #ebebeb;
         border-radius: 10px;
+        border: 1px solid #ebebeb;
+        padding: 0.7rem 0.9rem;
         .toc-list .toc-list-item a {
           &::before {
             content: none;
@@ -35,15 +33,14 @@
       }
     }
     .shared {
-      display: flex;
       align-items: center;
+      display: flex;
       justify-content: space-between;
       margin-bottom: 2rem;
       margin-top: 1rem;
-
       .shared_count {
-        display: flex;
         align-items: center;
+        display: flex;
         font-family: $content;
         i {
           color: $gray;
@@ -54,58 +51,51 @@
       .demo_button {
         background-color: $blue;
         border-radius: 3px;
-        padding: 1rem;
         color: $main;
         font-family: $content;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 1rem;
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: 600;
-        font-size: 1rem;
         i {
           margin-left: 0.4rem;
         }
       }
     }
   }
-
-  //individual article styles
-
   #title {
-    font-size: 2.5rem;
     font-family: $content;
+    font-size: 2.5rem;
     text-align: center;
   }
-
   .trix-content {
-    padding: 0 2rem;
-    line-height: 1.9rem;
     font-family: $content;
     font-style: normal;
+    line-height: 1.9rem;
+    padding: 0 2rem;
   }
 }
-
-// media queries
 
 @media only screen and (min-width: 375px) and (max-width: 1280px) {
   #article {
     #article-content {
       .shared {
-        justify-content: center;
         gap: 1.5rem;
+        justify-content: center;
       }
       .article-grid {
         display: flex;
         flex-direction: column;
-
         .content_table {
           margin-bottom: 1rem;
         }
       }
     }
     .trix-content {
-      padding: 0 0.5rem;
       border-bottom: 1px solid #ebebeb;
       margin-bottom: 1rem;
+      padding: 0 0.5rem;
     }
   }
 }

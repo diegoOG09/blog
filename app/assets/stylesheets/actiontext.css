@@ -12,9 +12,9 @@
  * images in galleries will be squished by the max-width: 33%; rule.
 */
 .trix-content {
+  border-radius: 0 0 5px 5px;
   color: #2F383E;
   font-family: 'Raleway';
-  border-radius: 0 0 5px 5px;
   font-size: 1rem;
 }
 .trix-content h1 {

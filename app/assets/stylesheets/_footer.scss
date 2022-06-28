@@ -6,18 +6,18 @@
     background-color: $darker;
     border-radius: 10px;
     p {
-      display: flex;
       align-items: center;
+      color: $gruv-light;
+      display: flex;
       justify-content: center;
       padding: 4rem;
-      color: $gruv-light;
     }
   }
   .rights {
-    display: flex;
     align-items: center;
-    justify-content: center;
     color: $gruv-light;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -32,8 +32,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         a {
-          margin-right: 1rem;
           font-size: 0.7rem;
+          margin-right: 1rem;
         }
       }
     }

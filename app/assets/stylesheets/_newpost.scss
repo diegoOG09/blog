@@ -1,24 +1,24 @@
 @import 'variables';
 
 .new-field {
-  font-family: $oxygen;
+  font-family: $content;
   label {
     color: $gray;
     margin-bottom: .3rem;
   }
   input {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    border-radius: 5px;
-    padding: .5rem;
-    border: none;
     background-color: $gray;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     margin-bottom: .5rem;
+    padding: .5rem;
   }
   textarea {
+    background-color: $gray;
     border-radius: 5px;
-    padding: .5rem;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    background-color: $gray;
+    padding: .5rem;
   }
 }

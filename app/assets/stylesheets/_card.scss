@@ -4,61 +4,57 @@
   display: flex;
   flex-direction: row;
   height: auto;
-  max-width: 100%;
   margin: 1rem 1rem 1rem 0;
+  max-width: 100%;
   .thumb {
     background-size: cover;
     max-width: 340px;
     .cover_img {
-      max-width: 340px;
       background-size: cover;
       border-radius: 10px;
+      max-width: 340px;
     }
   }
   .article-info {
     color: $dark-blue;
     padding: 0 0 0 1.5rem;
-
     .meta_info {
       margin: 0 0 1rem 0;
       .date {
-        font-family: $content;
         color: $blue;
-        font-size: .95rem;
+        font-family: $content;
+        font-size: 0.95rem;
       }
       .reading_minutes {
-        font-family: $content;
         color: $blue;
-        font-size: .95rem;
+        font-family: $content;
+        font-size: 0.95rem;
       }
     }
     h2 {
-      width: 80%;
+      font-family: $content;
       font-size: 1.8rem;
       margin: 0 0 1rem 0;
-      font-family: $content;
+      width: 80%;
     }
     h4 {
       color: $dark-blue;
-      margin: 0;
-      letter-spacing: 1px;
       font-family: $content;
-      font-weight: 400;
       font-size: 1rem;
       font-style: normal;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin: 0;
       width: 80%;
     }
-    .goto_article_btn {
-      font-family: $oxygen;
-      a {
-        font-family: $content;
-        background-color: $blue;
-        padding: .4rem .4rem .4rem .5rem;
-        border-radius: 7px;
-        color: $mainv2;
-        text-decoration: none;
-        font-weight: 600;
-      }
+    .goto_article_btn a {
+      background-color: $blue;
+      border-radius: 7px;
+      color: $main;
+      font-family: $content;
+      font-weight: 600;
+      padding: 0.4rem 0.4rem 0.4rem 0.5rem;
+      text-decoration: none;
     }
   }
 }
@@ -73,21 +69,21 @@
       padding: 0.5rem;
       .meta_info {
         display: flex;
-        gap: .2rem;
         flex-direction: column;
+        gap: 0.2rem;
         .date {
           padding: 0;
         }
       }
       h2 {
-        width: 80%;
         font-size: 1.2rem;
         text-align: left;
+        width: 80%;
       }
       h3 {
-        width: 100%;
         font-size: 0.9rem;
         text-align: justify;
+        width: 100%;
       }
     }
   }

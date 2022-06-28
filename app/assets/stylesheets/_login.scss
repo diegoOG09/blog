@@ -2,16 +2,15 @@
 
 .login-title {
   color: $main;
-  font-family: $oxygen;
+  font-family: $content;
   padding-top: 1rem;
 }
-
 .field {
   label {
     color: $gray;
-    font-family: $oxygen;
+    font-family: $content;
   }
   input {
-    font-family: $oxygen;
+    font-family: $content;
   }
 }

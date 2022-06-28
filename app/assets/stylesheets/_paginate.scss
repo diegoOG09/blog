@@ -1,12 +1,11 @@
 @import 'variables';
 
 .pagination {
-  font-family: $content;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   color: $main;
-  
+  display: flex;
+  font-family: $content;
+  justify-content: space-between;
   .previous_page {
     background-color: $blue;
     padding: 1rem;

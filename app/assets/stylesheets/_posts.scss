@@ -1,20 +1,19 @@
 @import "variables";
 
 #posts {
-  margin-top: 3rem;
   color: $dark;
+  margin-top: 3rem;
   .section_title {
+    font-family: $content;
     margin-bottom: 3rem;
-    font-family: $oxygen;
     .aboutme {
-      font-family: $content;
       color: $blue;
-      font-weight: 400;
+      font-family: $content;
       font-size: 1.5rem;
-      margin-top: 0;
+      font-weight: 400;
       margin-bottom: 1rem;
+      margin-top: 0;
     }
-
     .grid_things {
       color: $dark-blue;
       display: grid;
@@ -24,9 +23,9 @@
         padding: 0.7rem;
         width: 18rem;
         h2 {
-          font-weight: 700;
-          font-size: 1rem;
           color: $dark-blue;
+          font-size: 1rem;
+          font-weight: 700;
           text-align: left;
           i {
             font-size: 1rem;
@@ -42,26 +41,23 @@
       }
     }
   }
-
   .articles-grid {
     display: grid;
     grid-template-columns: 80% 20%;
-
     .presentation-text {
+      font-family: $content;
       margin-top: 3rem;
-      font-family: $oxygen;
-
       h2 {
-        font-weight: 300;
-        font-size: 3rem;
-        margin: 0;
         color: $blue;
+        font-size: 3rem;
+        font-weight: 300;
+        margin: 0;
       }
       h3 {
-        font-size: 1.5rem;
-        font-weight: 300;
         color: gray;
+        font-size: 1.5rem;
         font-style: italic;
+        font-weight: 300;
       }
     }
   }
@@ -72,9 +68,9 @@
     .section_title {
       margin-bottom: 1rem;
       .grid_things {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
       }
     }
@@ -84,7 +80,6 @@
     }
   }
 }
-
 @media only screen and (max-width: 655px) {
   #posts {
     .articles-grid {

@@ -1,23 +1,21 @@
 @import "variables";
 
 .header {
-  display: flex;
   align-items: center;
+  border-bottom: 1px solid #ebebeb;
+  color: $main;
+  display: flex;
+  font-family: $content;
+  font-size: 1.5rem;
   justify-content: space-between;
   text-align: left;
-  font-family: $content;
-  color: $main;
-  font-size: 1.5rem;
-  border-bottom: 1px solid #ebebeb;
-
   .home {
     display: flex;
     flex-direction: column;
   }
-
   .sign_in {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: .5rem;
     i {
       color: $dark-blue;
@@ -26,37 +24,30 @@
       padding-bottom: .45rem;
     }
   }
-
   .login-btn {
-    text-decoration: none;
     background-color: transparent;
     border: none;
     color: rgb(197, 196, 196);
+    cursor: pointer;
     font-size: 1rem;
     padding: 0;
-    cursor: pointer;
+    text-decoration: none;
   }
-  
   .subtitle {
     color: rgb(197, 196, 196);
     font-size: 1rem;
-    margin: 0;
     margin-bottom: .5rem;
+    margin: 0;
   }
 }
-
 .title_title {
-  font-family: $content;
   color: $blue;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  font-family: $content;
   font-size: 1.9rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
   a {
     color: $blue;
     text-decoration: none;
   }
-}
-
-@media only screen and (max-width: 375px) {
-  
 }
